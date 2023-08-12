@@ -1,8 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 
 export default function LazyImage({ src, alt, dataSrc }) {
-  const imgRef = useRef(null);
-
   useEffect(() => {
     const options = {
       root: null,
@@ -24,16 +22,18 @@ export default function LazyImage({ src, alt, dataSrc }) {
 
     const imageObserver = new IntersectionObserver(handleIntersection, options);
 
-    if (imgRef.current) {
-      imageObserver.observe(imgRef.current);
+    const imgElement = document.querySelector(`img[data-src="${dataSrc}"]`);
+    if (imgElement) {
+      imageObserver.observe(imgElement);
     }
 
     return () => {
-      if (imgRef.current) {
-        imageObserver.unobserve(imgRef.current);
+      if (imgElement) {
+        imageObserver.unobserve(imgElement);
       }
     };
-  }, []);
+  }, [dataSrc]);
 
-  return <img ref={imgRef} src={src} alt={alt} data-src={dataSrc} />;
+  return <img src={src} alt={alt} data-src={dataSrc} />;
 }
+

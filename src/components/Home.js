@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <div className="container1">
       <div className="d2">
+      {/* progressive image Loading */}
       <LazyImage 
         src={myImage2}
         alt="Lazy Loaded Image"
