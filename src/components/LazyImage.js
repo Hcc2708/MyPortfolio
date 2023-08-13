@@ -33,7 +33,7 @@ export default function LazyImage({ src, alt, dataSrc }) {
       }
     };
   }, [dataSrc]);
-
+  
   return <img src={src} alt={alt} data-src={dataSrc} />;
 }
 
