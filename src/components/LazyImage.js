@@ -5,7 +5,7 @@ export default function LazyImage({ src, alt, dataSrc }) {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.05,
+      threshold: 0.1,
     };
 
     const handleIntersection = (entries, observer) => {
