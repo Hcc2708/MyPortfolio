@@ -10,8 +10,8 @@ export default function Contact() {
       <Headers/>
       <div className='Contact1'>
         <div className='contactChild'>
-          <p><FontAwesomeIcon icon= {faEnvelope}/> <b>hemuchandravanshi03@gmail.com</b><br/><br/>
-          <FontAwesomeIcon icon={faPhone}/> <b>+91 6263736991</b></p>
+          <p><FontAwesomeIcon icon= {faEnvelope} className='icon3'/> <b className='github'>hemuchandravanshi03@gmail.com</b><br/><br/>
+          <FontAwesomeIcon icon={faPhone} className='icon2'/> <b className='github'>+91 6263736991</b></p>
           
         </div>
       </div>
