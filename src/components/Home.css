@@ -1,5 +1,5 @@
 .container{
-    background-image: linear-gradient(pink,rgb(135, 235, 222));
+    /* background-image: linear-gradient(pink,rgb(135, 235, 222)); */
 }
 .container1{
     background-image: linear-gradient(rgb(254, 173, 186),rgb(71, 190, 174));
@@ -7,8 +7,6 @@
     margin: 0 auto;
     box-shadow: 0 8px 10px 3px rgb(122, 121, 121);
 }
-
-
 .d1{
    
     background-image: linear-gradient(rgb(71, 193, 177), rgb(242, 168, 181));

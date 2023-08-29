@@ -11,7 +11,8 @@ export default function Projects() {
         <a href='https://hccnews.netlify.app/' className='news'><div className='hccnews'> HccNews</div></a>
       </div>
       <div className='p2'>
-        <a href='https://gitdetailsfinder.netlify.app/' className='news'><div className='hccnews'>GitDetailsFinder</div></a>
+        <a href='https://gitdetailsfinder.netlify.app/' className='news'>
+          <div className='hccnews'>GitDetailsFinder</div></a>
       </div>
       </div>
     </div>
